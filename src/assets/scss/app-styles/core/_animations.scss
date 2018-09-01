@@ -1,0 +1,22 @@
+// Fade In
+@include keyframes(fadeIn) {
+  	0%    { opacity: 0; }
+  	100%  { opacity: 1; } 
+}
+
+
+
+// Login Background Zoom 
+@include keyframes(background-zoom) {
+   0%   { transform: scale(1,1); }
+   50%  { transform: scale(1.5,1.5); }
+   100% { transform: scale(1,1); }
+}
+
+
+
+// Preloader Slide 
+@include keyframes(preloader-slide) {
+   0%   { width: 10px; }
+   100% { width: 110px; }
+}

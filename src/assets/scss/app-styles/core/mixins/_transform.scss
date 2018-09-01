@@ -1,0 +1,22 @@
+// http://bourbon.io/docs/#transform
+// Usage
+// @include transform(translateY(50px));
+// @include transform(scale(0.9) rotate(-3deg));
+// @include transform-origin(center top);
+// @include transform-style(preserve-3d);
+
+@mixin transform($property: none) {
+  // none | <transform-function>
+  @include prefixer(transform, $property, webkit moz ms o spec);
+}
+
+@mixin transform-origin($axes: 50%) {
+  // x-axis - left | center | right  | length | %
+  // y-axis - top  | center | bottom | length | %
+  // z-axis -                          length
+  @include prefixer(transform-origin, $axes, webkit moz ms o spec);
+}
+
+@mixin transform-style($style: flat) {
+  @include prefixer(transform-style, $style, webkit moz ms o spec);
+}

@@ -1,0 +1,49 @@
+$roboto-regular-font-path: '../src/assets/fonts' !default;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$roboto-regular-font-path}/roboto-light.eot');
+  src: url('#{$roboto-regular-font-path}/roboto-light.woff2') format('woff2'),
+       url('#{$roboto-regular-font-path}/roboto-light.woff') format('woff'),
+       url('#{$roboto-regular-font-path}/roboto-light.ttf') format('truetype'),
+       url('#{$roboto-regular-font-path}/roboto-light.svg#Roboto-Light') format('svg'),
+       url('#{$roboto-regular-font-path}/roboto-light.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$roboto-regular-font-path}/roboto-regular.eot');
+  src: url('#{$roboto-regular-font-path}/roboto-regular.woff2') format('woff2'),
+       url('#{$roboto-regular-font-path}/roboto-regular.woff') format('woff'),
+       url('#{$roboto-regular-font-path}/roboto-regular.ttf') format('truetype'),
+       url('#{$roboto-regular-font-path}/roboto-regular.svg#Roboto-Light') format('svg'),
+       url('#{$roboto-regular-font-path}/roboto-regular.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$roboto-regular-font-path}/roboto-medium.eot');
+  src: url('#{$roboto-regular-font-path}/roboto-medium.woff2') format('woff2'),
+       url('#{$roboto-regular-font-path}/roboto-medium.woff') format('woff'),
+       url('#{$roboto-regular-font-path}/roboto-medium.ttf') format('truetype'),
+       url('#{$roboto-regular-font-path}/roboto-medium.svg#Roboto-Light') format('svg'),
+       url('#{$roboto-regular-font-path}/roboto-medium.eot?#iefix') format('embedded-opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$roboto-regular-font-path}/roboto-bold.eot');
+  src: url('#{$roboto-regular-font-path}/roboto-bold.woff2') format('woff2'),
+       url('#{$roboto-regular-font-path}/roboto-bold.woff') format('woff'),
+       url('#{$roboto-regular-font-path}/roboto-bold.ttf') format('truetype'),
+       url('#{$roboto-regular-font-path}/roboto-bold.svg#Roboto-Light') format('svg'),
+       url('#{$roboto-regular-font-path}/roboto-bold.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}

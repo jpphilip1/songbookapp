@@ -1,0 +1,11 @@
+// usage: @include transition(opacity ease 0.2s, transform ease 0.2s);
+
+@mixin transition($transitions...) {
+  	$unfoldedTransitions: ();
+  	@each $transition in $transitions {
+    	$unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
+  	}
+  
+  	-webkit-transition: $unfoldedTransitions;
+  	transition: $unfoldedTransitions;
+}

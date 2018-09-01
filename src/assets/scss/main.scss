@@ -1,0 +1,77 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import "app-styles/core/theme";
+
+//Node Modules
+// @import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
+
+// Vendor Variables
+@import "vendor/bootstrap/bootstrap-custom-variables";
+@import "vendor/bootstrap/bootstrap-custom";
+@import "vendor/bootstrap/bootstrap-rtl";
+@import "vendor/bootstrap/no-gutters";
+
+// CORE
+@import "app-styles/core/variables";
+@import "themes/theme-1";
+@import "themes/theme-2";
+@import "app-styles/core/functions";
+@import "app-styles/core/mixins/custom-scrollbar";
+@import "app-styles/core/mixins/position";
+@import "app-styles/core/mixins/centering";
+@import "app-styles/core/mixins/transitions";
+@import "app-styles/core/mixins/keyframe-animations";
+
+@import "app-styles/core/mixins/animation";
+@import "app-styles/core/mixins/full-cover";
+@import "app-styles/core/mixins/flexbox";
+@import "app-styles/core/mixins/flexbox-v2";
+@import "app-styles/core/mixins/triangle";
+@import "app-styles/core/mixins/link-unstyled";
+@import "app-styles/core/mixins/background-color-opacity";
+@import "app-styles/core/mixins/clickable";
+@import "app-styles/core/mixins/prefixer";
+@import "app-styles/core/mixins/transform";
+@import "app-styles/core/mixins/linear-gradient";
+@import "app-styles/core/mixins/box-shadow";
+@import "app-styles/core/mixins/gradient-remove";
+@import "app-styles/core/mixins/truncate";
+@import "app-styles/core/mixins/border-radius";
+@import "app-styles/core/mixins/currentview-vertical-align";
+@import "app-styles/core/mixins/equal-distribution";
+@import "app-styles/core/mixins/hover";
+@import "app-styles/core/mixins/buttons";
+@import "app-styles/core/mixins/font-smoothing";
+@import "app-styles/core/animations";
+@import "app-styles/core/fonts";
+
+
+
+
+// Vendor Components
+@import "vendor/bootstrap/bootstrap-overrides";
+
+@import "app-styles/theme/base-theme";
+@import "app-styles/core/base";
+
+// Components
+@import "app-styles/components/app-header";
+@import "app-styles/components/app-body";
+@import "app-styles/components/app-footer";
+@import "app-styles/components/tabs";
+@import "app-styles/components/toggle-switch";
+@import "app-styles/components/buttons";
+@import "app-styles/components/checkbox";
+@import "app-styles/components/radio-button";
+@import "app-styles/components/page-heading";
+
+
+// Icons
+// @import "app-styles/core/icons";
+
+
+// Utilities
+@import "app-styles/utilities/utilities-definitions";
+@import "app-styles/utilities/utilities";
+
+

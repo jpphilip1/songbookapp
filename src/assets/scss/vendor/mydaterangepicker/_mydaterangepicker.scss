@@ -1,0 +1,302 @@
+@mixin full-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mydrp .btnclear,
+.mydrp .btnpicker {
+    // width: 40px !important;
+    width: 31px !important;
+}
+.mydrp .btnclear {
+    height: auto !important;
+    display: none;
+}
+.mydrp {
+.btnpickerenabled {
+    &:hover,&:focus {
+        background-color: rgba(0, 0, 0, 0.01) !important;
+        }
+    }
+} 
+
+
+.form-group .mydrp {
+    width: 100% !important;
+}
+
+.mydrp .caltable, .mydrp .daycell, .mydrp .weekdaytitle {
+    color: black(0.9) !important;
+}
+
+.mydrp .selector {
+    box-shadow: 0 6px 13px rgba(0,0,0,.2);
+    width: auto !important;
+    min-width: 252px;
+    border-radius: 3px;
+}
+
+.mydrp .titlearea {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.mydrp .footerarea {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.mydrp .caltable,
+.mydrp .daycell,
+.mydrp .weekdaytitle {
+    color: $gray-dark !important;
+}
+
+.mydrp .nextmonth,
+.mydrp .prevmonth {
+    color: lighten($gray-dark, 30%) !important;
+}
+
+.mydrp .daycell:hover {
+    .nextmonth,
+    .prevmonth {
+        color: #fff !important;
+    }
+}
+
+.mydrp .currmonth {
+    background-color: #fff !important;
+}
+
+.mydrp .daycell:hover {
+    &.currmonth,
+    &.disabled,
+    .currday { color: #fff !important }
+
+    .currmonth { background-color: inherit !important; }
+}
+
+.mydrp * {
+    /*font-family: $font-primary !important;*/
+}
+
+.mydrp .icon {
+    font-family: mydaterangepicker !important;
+
+    .rtl &, [dir="rtl"] & {
+        transform: rotate(360deg);
+    }
+}
+
+.mydrp .nextmonth.sunday,
+.mydrp .prevmonth.sunday {
+    color: #C30000 !important;
+}
+
+.currday {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    padding: 3px !important;
+    text-decoration: none !important;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        @include full-cover();
+        background: $theme-accent;
+        border-radius: 3px;
+        z-index: -1;
+    }
+}
+
+.mydrp .weekdaytitle {
+    background-color: #eaeaea !important;
+}
+
+
+my-date-range-picker.input-sm {
+  padding: 0;
+
+  .mydrp {
+
+        @include border-radius(0px,0px,0px,0px);
+
+    input, .selbtngroup, .btnpicker {
+        height: 28px !important;
+        font-size: 14px !important;
+        @include border-radius(0px,0px,0px,0px);
+    }
+
+    .selbtngroup {
+        .btnpicker {
+            border-left: 1px solid #ddd;
+
+            .rtl &, [dir="rtl"] & {
+                border-right: 1px solid #ddd;
+                border-left: none;
+            }
+        }
+    }
+
+    .icon {
+      line-height: 28px !important;
+    }
+  }
+}
+
+.mydrp, .mydrp .headerclearbtn, .mydrp .headerokbtn {
+  border-color: $input-border;
+}
+
+.form-inline {
+  @media (min-width: 768px) {
+    my-date-range-picker {
+      display: inline-block;
+      width: 265px;
+      vertical-align: middle;
+    }
+  }
+  .rtl &, [dir="rtl"] & {
+
+      .mydrp .selection {
+
+          padding: 0 6px 0 64px;
+      }
+  }
+}
+
+my-date-range-picker.input-sm {
+  .selectiongroup {
+    input, .selbtngroup {
+      height: 28px !important;
+      font-size: 14px !important;
+      padding-top: 0px !important;
+    //   padding: 0px 14px !important;
+    }
+  }
+}
+
+.mydrp .icon-mydrpcalendar {
+
+    font-size: 13px;
+}
+.mydrp .selectorarrow:before,.mydrp .selectorarrow:after {
+
+    .rtl &, [dir="rtl"] & {
+
+                    left:auto;
+                    right: 24px;
+				}
+}
+
+
+.rtl , [dir="rtl"]  {
+
+    .mydrp .btnpicker {
+        // border-radius: 4px 0 0 4px;
+        @include border-radius(0px,0px,0px,0px);
+    }
+    .mydrp .selector {
+
+        margin-right: -1px;
+    }
+
+    .mydrp .headerbtncell {
+
+        transform: rotate(180deg);
+    }
+
+    .mydrp .selectorarrow:before {
+
+        margin-right: -1px;
+    }
+}
+
+.has-error {
+    .mydrp {
+        border-color: $state-danger-text;
+    }
+}
+
+.mydrp .btnpickerenabled,
+.mydrp .btnclearenabled {
+    color: #787878 !important;
+}
+
+.rtl , [dir="rtl"]  {
+    .mydrp{
+        .titlearearight {
+            &.titlearearightdisabled{
+                border-right: 1px solid #CCC;
+                @include border-radius(0px, 0px, 4px, 0px);
+            }
+        }
+        .titlearealeft{
+            &.titlearealeftdisabled{
+                border-left: 1px solid #CCC;
+                border-right: none;
+                @include border-radius(0px, 0px, 0px, 4px);
+            }
+        }
+        .headerbtncell{
+            position: relative;
+            padding-bottom: 9px;
+        }
+    }
+}
+.mydrp{
+    .headerbtncell{
+        padding-bottom: 9px;
+    }
+}
+
+.validate-batch-custom {
+    .mydrp{
+        .headerbtncell{
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.mydrp .selection {
+  padding: 2px 6px 0px 6px !important;
+  position: static !important;
+  text-align: left !important;
+  font-family: $body-font;
+  font-size: $body-font-size;
+
+  .rtl &, [dir="rtl"] &{
+    text-align: right !important;
+  }
+}
+.mydrp .mydrpicon{
+  line-height: normal !important;
+  font-size: 13px!important;
+}
+
+.mydrp .headermonthtxt, .mydrp .headeryeartxt {
+  vertical-align: top !important;
+  padding-top: 1px !important;
+}
+
+.mydrp .headerlabelbtn, .mydrp .monthlabel {
+  color: #000 !important;
+}
+
+.app-c-wijmo-datepicker,.wj-inputdatetime{
+    .wj-input {
+        .wj-input-group {
+            .wj-btn {
+                padding: 0 2px !important;
+                color: #fff;
+            }
+        }
+    }
+}
+

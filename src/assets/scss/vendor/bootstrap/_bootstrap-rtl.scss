@@ -1,0 +1,205 @@
+.rtl, [dir="rtl"] {
+    @media (min-width: 768px) {
+    	div[class^="col-"] { float: right; }
+     }
+	@media (min-width: 992px) {
+
+		.col-md-push-9 {
+
+			right: 75%;
+			left: auto;
+		 }
+		 .col-md-pull-3 {
+
+	    	left: 25%;
+			right: auto;
+		  }
+	}
+
+	@media (min-width: 768px) and (max-width: 1200px) {
+			.dropdown-menu-right {
+				div[class^="col-"] {
+					float: none;
+			}
+		}
+	}
+
+	th { text-align: right;}
+
+	.close { float: left; }
+
+	.pull-left { float: right!important; }
+
+	.pull-right { float: left!important; }
+
+	.app-u-text-right { text-align: left !important; }
+
+	.app-u-float-right { float: left !important; }
+
+	// .dropdown-menu { right: -204px; left: auto;
+
+  //     @media only screen and (min-width: 837px) {
+	// 	  right: -234px; left: auto;
+	//   }
+
+
+	// }
+
+	.dropdown-menu > li > a { text-align: right; }
+
+    .nav-tabs > li { float: right; }
+
+	.nav-justified > li, .nav-tabs.nav-justified > li { float: none; }
+
+	.media-left, .media > .pull-left { padding-left: 10px; padding-right: 0; }
+
+	.app-c-media-list__item__heading { padding-right: 0; padding-left: 20%; }
+
+	.app-c-media-list__item__heading .time-stamp { left: 0; right: auto; width: auto; }
+
+	.nav-tabs > li > a { margin-right: 0; }
+
+	.app-u-float-left { float: right !important; }
+
+	.app-u-mr { margin-left: 10px !important; margin-right: 0px !important; }
+
+	.app-c-lookup-icon { margin-left: 10px; }
+
+	.app-u-def-margin-left { margin-right: 10%; margin-left: 0;}
+
+	.app-c-letter-highlight { margin-right: 5px; margin-left: 0; }
+
+	.app-c-map-toolbar { left: 0; right: 36px; }
+
+	.app-l-map-search { right: 10px; left: auto; }
+
+	.wj-inputcolorbox { right:6px; left:auto;}
+
+	.wj-input-group .wj-form-control { padding: 0 22px; }
+
+	.dropdown-more-searh-options label { float: right; }
+
+	.app-l-compact-dataviewer-sidepanel-validity-status { right: auto;left: 0; border-radius: 0 30px 30px 0; }
+
+	.app-u-pl0 { padding-right: 0 !important; padding-left: 10px!important }
+
+	.app-c-icon-grid__item { float: right; }
+
+	.list-group { padding-right:0; }
+
+	.panel-heading--with-controls .panel-heading--controls { left: 5px; right:auto; }
+
+	.caret { margin-left: 0; margin-right: 4px; }
+
+	.app-c-panel-menu {
+		float: left;
+		left: -1px;
+		right:auto;
+
+		.app-c-panel-validate-portion {
+			border-radius: 0 16px 16px 0;
+		}
+	 }
+
+	.app-c-checkbox {
+		> label {
+			padding-right: 23px;
+			padding-left: 0;
+
+			.app-c-checkbox-icon{
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+	.app-c-radio-button {
+		> label {
+			padding-right: 23px;
+			padding-left: 0;
+			.app-c-radio-button-icon {
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+
+	.wj-flexgrid-custom .wj-cell {border-left: 1px solid transparent;}
+}
+
+@media (min-width: 768px) {
+    .rtl, [dir="rtl"] {
+        .form-horizontal .control-label {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .rtl, [dir="rtl"] {
+        .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+            float: right;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .rtl, [dir="rtl"] {
+        .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+            float: right;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .rtl, [dir="rtl"] {
+        .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+            float: right;
+        }
+    }
+}
+
+.rtl, [dir="rtl"] {
+  .input-group .form-control:first-child {
+      // border-bottom-right-radius: $border-radius-base;
+      // border-top-right-radius: $border-radius-base;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+  }
+}
+
+.rtl, [dir="rtl"] {
+    .has-error {
+          .input-group-addon:last-child {
+            border-color: #d32f2f!important;
+        }
+    }
+  .input-group-addon:last-child {
+      // border-bottom-left-radius: $border-radius-base;
+      // border-top-left-radius: $border-radius-base;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+  }
+
+  .input-group-addon:last-child {
+      border-left: solid 1px $input-border;
+      border-right: 0;
+  }
+}
+
+  .dropdown-menu-right {
+    left: auto;
+    right: 0;
+    font-size: 12px;
+    margin-top: 0;
+    .rtl &, [dir="rtl"] & {
+      right: auto !important;
+      left: 0 !important;
+    }
+  }
+
+
+
+
+.rtl , [dir="rtl"]  {
+
+}

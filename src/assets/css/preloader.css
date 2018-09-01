@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-medium.eot');
+  src: url('../fonts/roboto-medium.woff2') format('woff2'),
+       url('../fonts/roboto-medium.woff') format('woff'),
+       url('../fonts/roboto-medium.ttf') format('truetype'),
+       url('../fonts/roboto-medium.svg#roboto-medium') format('svg'),
+       url('../fonts/roboto-medium.eot?#iefix') format('embedded-opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-regular.eot');
+  src: url('../fonts/roboto-regular.woff2') format('woff2'),
+       url('../fonts/roboto-regular.woff') format('woff'),
+       url('../fonts/roboto-regular.ttf') format('truetype'),
+       url('../fonts/roboto-regular.svg#roboto-regular') format('svg'),
+       url('../fonts/roboto-regular.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-light.eot');
+  src: url('../fonts/roboto-light.woff2') format('woff2'),
+       url('../fonts/roboto-light.woff') format('woff'),
+       url('../fonts/roboto-light.ttf') format('truetype'),
+       url('../fonts/roboto-light.svg#roboto-light') format('svg'),
+       url('../fonts/roboto-light.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-bold.eot');
+  src: url('../fonts/roboto-bold.woff2') format('woff2'),
+       url('../fonts/roboto-bold.woff') format('woff'),
+       url('../fonts/roboto-bold.ttf') format('truetype'),
+       url('../fonts/roboto-bold.svg#roboto-bold') format('svg'),
+       url('../fonts/roboto-bold.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.app-l-loader{
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Arial", Tahoma, Sans-Serif;
+    font-display: swap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff url(../images/background-pattern.png) repeat;
+    z-index: 9999;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.app-l-loader__header{
+    padding: 28px 52px 28px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.app-l-logo__imaap, .app-l-logo {
+
+}
+.app-l-logo__imaap img, .app-l-logo  img{
+    max-width: 100%;
+}
+.app-l-logo__imaap a{
+    display: block;
+    background: white;
+    max-width: 110px;
+}
+.app-l-logo  a{
+    display: block;
+    background: white;
+    max-width: 125px;
+}
+.app-l-logo {
+    margin-left: auto;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.app-l-loader__content{
+    height: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.app-l-loader__footer{
+    padding: 40px 0 45px;
+    text-align: center;
+}
+.app-l-loader__footer p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: #606060;
+    font-weight: 300;
+}
+.app-l-loader__wrap{
+
+}
+.app-l-loader__wrap h5{
+    margin: 23px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.app-l-loader__data{
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+.app-l-loader__data img{
+    display: block;
+    margin: 0 auto 26px;
+    max-width: 100%;
+    max-height: 100px;
+}
+.app-l-loader__data h4{
+    margin: 0 0 6px;
+    padding: 0;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+.app-l-loader__data .app-l-loader__version{
+    display: block;
+    line-height: normal;
+    font-size: 14px;
+    color: #606060;
+    font-weight: 300;
+}
+
+.app-l-loader__preloader {
+    position: relative;
+    width: 134px;
+    height: 134px;
+    margin: 0 auto;
+    background: #ffffff;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.app-l-loader-circle {
+    position: absolute;
+    border-top: 2px solid #404041;
+    border-bottom: 2px solid transparent;
+    border-left:  2px solid #404041;
+    border-right: 2px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    animation: preloader 2s infinite;
+    -webkit-animation: preloader 2s infinite;
+    -moz-animation: preloader 2s infinite;
+    -ms-animation: preloader 2s infinite;
+    -o-animation: preloader 2s infinite;
+}
+
+.app-l-loader-circle__one {
+    width: 124px;
+    height: 124px;
+    border-top: 2px solid #ff641e;
+    border-left: 2px solid #ff641e;
+}
+
+.app-l-loader-circle__two {
+    width: 104px;
+    height: 104px;
+    animation-delay: -.2s;
+    -webkit-animation-delay: -.2s;
+    -moz-animation-delay: -.2s;
+    -ms-animation-delay: -.2s;
+    -o-animation-delay: -.2s;
+}
+
+.app-l-loader-circle__three {
+    width: 78px;
+    height: 78px;
+    border-top: 2px solid #ff641e;
+    border-left: 2px solid #ff641e;
+
+    animation-delay: -.4s;
+    -webkit-animation-delay: -.4s;
+    -moz-animation-delay: -.4s;
+    -ms-animation-delay: -.4s;
+    -o-animation-delay: -.4s;
+}
+.app-l-loader-circle__four{
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #404041;
+    border-left: 2px solid #404041;
+
+    animation-delay: -.6s;
+    -webkit-animation-delay: -.6s;
+    -moz-animation-delay: -.6s;
+    -ms-animation-delay: -.6s;
+    -o-animation-delay: -.6s;
+}
+@keyframes preloader {
+    50% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes preloader {
+    50% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes preloader {
+    50% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes preloader {
+    50% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+@-o-keyframes preloader {
+    50% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 991px){
+
+}
+
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 600px){
+
+    .app-l-loader-circle__one{
+        width: 22px;
+        height: 22px;
+    }
+    .app-l-loader-circle__two {
+        width: 48px;
+        height: 48px;
+    }
+    .app-l-loader-circle__three {
+        width: 74px;
+        height: 74px;
+    }
+    .app-l-loader-circle__four {
+        width: 94px;
+        height: 94px;
+    }
+    .app-l-loader__data h4{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 480px){
+
+    .app-l-loader__header{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 320px){
+
+}

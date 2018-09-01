@@ -1,0 +1,47 @@
+.songapp-header-wrapper {
+
+    .songapp-app-header {
+        text-transform: capitalize;
+    }
+
+    .example-header-image {
+        background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg') center no-repeat cover;
+        background-size: cover;
+    }
+    
+    .example-icon {
+        padding: 0 14px;
+    }
+    
+    .example-spacer {
+        flex: 1 1 auto;
+    }
+
+
+    .songapp-link-group {
+
+        @include flexboxv2();
+        @include align-itemsv2(center);
+
+        .songapp-link-item {
+            @include flexboxv2();
+            @include align-itemsv2(center);
+
+            span {
+                font-size: 16px;
+                color: #000000;
+
+                + i {
+                    margin-left: 5px;
+                }
+            }
+            i {
+                font-size: 18px;
+            }
+
+            + .songapp-link-item {
+                margin-left: 15px;
+            }
+        }
+    }
+}

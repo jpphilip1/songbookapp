@@ -1,0 +1,30 @@
+// Colors
+
+
+.mydrp .btnclearenabled:hover,
+.mydrp .btnpickerenabled:hover,
+.mydrp .daycell:hover,
+.mydrp .footerbtnenabled:hover,
+.mydrp .headerclearbtnenabled:hover,
+.mydrp .btnclearenabled:focus,
+.mydrp .btnpickerenabled:focus,
+.mydrp .daycell:focus,
+.mydrp .footerbtnenabled:focus,
+.mydrp .headerclearbtnenabled:focus {
+    background-color: $theme-accent !important;
+    color: #fff;
+}
+
+.mydrp .btnpickerenabled:hover,
+.mydrp .btnpickerenabled:focus,
+.mydrp .btnclearenabled:hover,
+.mydrp .btnclearenabled:focus {
+    background-color: rgba(0,0,0,.1) !important;
+    color: #787878;
+}
+
+.mydrp .footerbtn:hover {
+    border-color: black(0.8);
+}
+
+

@@ -1,0 +1,81 @@
+// Font Color Based On Background Color
+@function background-based-text-color($color) {
+	@if (lightness($color) > 50) {
+		@return rgba(0,0,0,0.8);
+	} @else {
+		@return rgba(255,255,255,0.95);
+	}
+}
+
+
+
+// Font Color Based On Background Color
+@function header-nav-mobile-text-color($color) {
+	@if (lightness($color) > 50) {
+		@return lighten($theme-accent, 5%);
+	} @else {
+		@return lighten($theme-accent, 60%);
+	}
+}
+
+
+
+// Transitions
+@function unfoldTransition ($transition) {
+    // Default values
+    $property: all;
+    $duration: .2s;
+    $easing: null; // Browser default is ease, which is what we want
+    $delay: null; // Browser default is 0, which is what we want
+    $defaultProperties: ($property, $duration, $easing, $delay);
+
+    // Grab transition properties if they exist
+    $unfoldedTransition: ();
+    @for $i from 1 through length($defaultProperties) {
+        $p: null;
+        @if $i <= length($transition) {
+            $p: nth($transition, $i)
+        } @else {
+            $p: nth($defaultProperties, $i)
+        }
+        $unfoldedTransition: append($unfoldedTransition, $p);
+    }
+
+    @return $unfoldedTransition;
+}
+
+
+// Black & White Opacity
+@function black($opacity) {
+  @return rgba(black, $opacity);
+}
+@function white($opacity) {
+  @return rgba(white, $opacity);
+}
+
+
+// Returns the opposite direction of each direction in a list
+@function opposite-direction($directions) {
+  $opposite-directions: ();
+  $direction-map: (
+    'top':    'bottom',
+    'right':  'left',
+    'bottom': 'top',
+    'left':   'right',
+    'center': 'center',
+    'ltr':    'rtl',
+    'rtl':    'ltr'
+  );
+ 
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+    
+    @if map-has-key($direction-map, $direction) { 
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn "No opposite direction can be found for `#{$direction}`. Direction omitted.";
+    }
+  }
+ 
+  @return $opposite-directions;
+}

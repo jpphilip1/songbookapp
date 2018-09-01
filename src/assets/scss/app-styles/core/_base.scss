@@ -1,0 +1,119 @@
+html {
+	position: relative;
+  min-height: 100%;
+}
+
+app-root, app-root > div, app-home {
+  // min-height: 100%;
+  height: 100%;
+}
+
+body {
+
+  font-family: $body-font;
+  font-size: $body-font-size;
+  color: $text-gray-dark;
+  background-color: $bg-white;
+
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #000;
+}
+
+::selection {
+	color: #fff;
+	background: #000;
+}
+
+a {
+  color: $text-blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+//
+// Remove most spacing between table cells.
+//
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+// Custom Scrollbar
+@include scrollbars(.6em, black(0.2));
+
+.dropdown-menu {
+
+	li {
+
+	  cursor :pointer;
+	}
+}
+
+// align all the elements to right in RTL-mode
+
+.form-group {
+
+	.rtl &, [dir="rtl"] & {
+
+		text-align: right;
+	}
+}
+
+//Default Validation Colors
+.valid { color: $valid; }
+.not-validated { color: $not-validated; }
+.invalid { color: $invalid; }
+
+// Common fix style for <option> in select tag.
+
+.form-control {
+
+	@include box-shadow(none);
+    select {
+      option {
+        font-size: 14px;
+      }
+    }
+}
+
+.hide_control-msg {
+  // visibility: hidden;
+	display: none;
+}
+
+.help-block {
+	margin-bottom: 0px !important;
+}
+
+.app-l-prevent-bounce {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
