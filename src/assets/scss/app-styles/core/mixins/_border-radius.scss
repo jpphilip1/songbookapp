@@ -12,3 +12,10 @@
 	-moz-border-radius-bottomright: $bottomright;
 	-moz-border-radius-bottomleft: $bottomleft;
 }
+@mixin border-radius-all($borderRadius...){
+	border-radius:$borderRadius;
+	-webkit-border-radius:$borderRadius;
+	-moz-border-radius:$borderRadius;
+	-ms-border-radius:$borderRadius;
+	-o-border-radius:$borderRadius;
+}

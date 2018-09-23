@@ -1,0 +1,70 @@
+// CREDITS PAGE
+
+.songapp-credits-wrapper {
+    @include flexboxv2();
+    @include flex-directionv2(column);
+    @include align-itemsv2(center);
+
+    .songapp-credits-header {
+        width: 100%;
+        padding: 15px 30px;
+
+        @include flexboxv2();
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .songapp-credits-body {
+        @include flexboxv2();
+        @include align-itemsv2(center);
+        @include flex-wrapv2(wrap);
+        @include flex-directionv2(row);
+
+        .songapp-credits-section {
+
+            @include flexboxv2();
+            @include flex-directionv2(column);
+            @include align-itemsv2(center);
+            @include border-radius-all(4px);
+            
+            width: 300px;
+            @include flexv2(0, 0, 300px);
+            border: solid 1px #ccc;
+            background: #f1f1f1;
+
+            .songapp-credits-section-header {
+                padding: 10px;
+                @include flexboxv2();
+                @include flex-directionv2(column);
+                @include align-itemsv2(center);
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-right: auto;
+                }
+            }
+            .songapp-credits-section-body {
+                padding: 10px;
+                @include flexboxv2();
+                @include flex-directionv2(column);
+                @include align-itemsv2(center);
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-right: auto;
+
+                    + span {
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SONGS PAGE

@@ -17,7 +17,6 @@
         flex: 1 1 auto;
     }
 
-
     .songapp-link-group {
 
         @include flexboxv2();
@@ -26,6 +25,12 @@
         .songapp-link-item {
             @include flexboxv2();
             @include align-itemsv2(center);
+            outline: none;
+
+            &:hover {
+                cursor: pointer;
+                outline: none;
+            }
 
             span {
                 font-size: 16px;
@@ -36,7 +41,7 @@
                 }
             }
             i {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             + .songapp-link-item {

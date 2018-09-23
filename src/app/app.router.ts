@@ -7,10 +7,9 @@ import { SongsComponent } from './songs/songs.component';
 import { AuthorsComponent } from './authors/authors.component';
 
 export const router: Routes = [
-  {
-    path: '**',
-    redirectTo: 'songs',
-    pathMatch: 'full'
+  { 
+    path:'**', 
+    component: SongsComponent  
   },
   {
     path: '', 
